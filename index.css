@@ -50,11 +50,18 @@ p {
 }
 
 a {
-    color: inherit;
-    text-decoration: underline;
-    &:hover{
-        color: rgba(255,255,255,1);
-    }
+    display: inline-block;
+    background-color: #39414e;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 3px 0;
+    transition: 0.2s background-color;
+    color: white;
+}
+a:hover{
+    background-color: #536076;
 }
 
 svg {
@@ -76,4 +83,9 @@ div {
     display: inline-block;
     width: calc(100% - 20px);
     overflow: auto;
+}
+
+section {
+    padding-top: 20px;
+    display: none;
 }
